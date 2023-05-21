@@ -4,12 +4,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+
+[RequireComponent(typeof(Rigidbody2D), typeof(TouchingDirections))]
 public class PlayerController : MonoBehaviour
 {
     public float walkSpeed = 5f;
     public float runSpeed = 8f;
+    public float jumpImpulse = 10f;
 
     Vector2 moveInput;
+
+    TouchingDirections touchingDirections;
 
     public float CurrentMoveSpeed
     {
@@ -51,6 +56,7 @@ public class PlayerController : MonoBehaviour
 
             _isMoving = value;
             animator.SetBool(AnimationStrings.isMoving, value);
+            touchingDirections = GetComponent<TouchingDirections>();
 
         }
     }
@@ -93,6 +99,7 @@ public class PlayerController : MonoBehaviour
 
     Rigidbody2D rb;
     Animator animator;
+    
 
     private void Awake()
     {
@@ -100,21 +107,13 @@ public class PlayerController : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     private void FixedUpdate()
     {
         rb.velocity = new Vector2(moveInput.x * CurrentMoveSpeed, rb.velocity.y);
+
+        animator.SetFloat(AnimationStrings.yVelocity, rb.velocity.y);
     }
 
     public void OnMove(InputAction.CallbackContext context)
@@ -151,5 +150,15 @@ public class PlayerController : MonoBehaviour
 
         moveInput = context.ReadValue<Vector2>();
         IsMoving = moveInput != Vector2.zero;
+    }
+
+    public void OnJump(InputAction.CallbackContext context)
+    {
+        //To Do: Check if alive
+        if (context.started && touchingDirections.IsGrounded)
+        {
+            animator.SetTrigger(AnimationStrings.jump);
+            rb.velocity = new Vector2(rb.velocity.x, jumpImpulse);
+        }
     }
 }
