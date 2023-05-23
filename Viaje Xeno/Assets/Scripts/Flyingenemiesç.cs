@@ -2,20 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemys : MonoBehaviour
+public class Flyingenemies莽 : MonoBehaviour
 {
     public Transform playerTransform; // Transform del jugador
     public float patrolSpeed = 3f; // Velocidad de patrulla del enemigo
-    public float chaseSpeed = 6f; // Velocidad de persecuci髇 del enemigo
+    public float chaseSpeed = 6f; // Velocidad de persecuci贸n del enemigo
     public float patrolDistance = 5f; // Distancia a recorrer en la patrulla
-    public float chaseDistance = 5f; // Distancia de persecuci髇
-    public float minDistance = 3f; // Distancia m韓ima entre el enemigo y el jugador
+    public float chaseDistance = 5f; // Distancia de persecuci贸n
+    public float minDistance = 1f; // Distancia m铆nima entre el enemigo y el jugador
+    public float maxVerticalDistance = 3f; // Altura m谩xima permitida para el enemigo
     public Transform PersonajePrincipal; // Transform del objeto A
     public Transform Enemigo; // Transform del objeto B
-    private Vector3 initialPosition; // Posici髇 inicial individual del enemigo
-    private Vector3 patrolPosition; // Posici髇 de patrulla
-    private bool isChasing = false; // Indicador de persecuci髇
-    private bool isMovingRight = true; // Indicador de direcci髇 de movimiento
+    private Vector3 initialPosition; // Posici贸n inicial individual del enemigo
+    private Vector3 patrolPosition; // Posici贸n de patrulla
+    private bool isChasing = false; // Indicador de persecuci贸n
+    private bool isMovingRight = true; // Indicador de direcci贸n de movimiento
     private float currentSpeed; // Velocidad actual del enemigo
 
     private void Start()
@@ -27,10 +28,9 @@ public class Enemys : MonoBehaviour
 
     private void Update()
     {
-        
         SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
         float distanceToPlayer = Vector3.Distance(transform.position, playerTransform.position);
-        
+
         if (PersonajePrincipal.position.x < Enemigo.position.x)
         {
             spriteRenderer.flipX = false;
@@ -39,18 +39,13 @@ public class Enemys : MonoBehaviour
         {
             spriteRenderer.flipX = true;
         }
-        else
-        {
-            // Los objetos est醤 en la misma posici髇 en el eje X
-            Debug.Log("Objeto A y objeto B est醤 en la misma posici髇 en el eje X");
-        }
-        
-        if (distanceToPlayer <= chaseDistance && distanceToPlayer > minDistance)
+       
+        // Verificar si el jugador est谩 dentro de la distancia de persecuci贸n y dentro del rango vertical permitido
+        if (distanceToPlayer <= chaseDistance && Mathf.Abs(transform.position.y - playerTransform.position.y) <= maxVerticalDistance)
         {
             isChasing = true;
-            isMovingRight = true; // Reiniciar direcci髇 de movimiento en persecuci髇
-  
-            currentSpeed = chaseSpeed; // Utilizar velocidad de persecuci髇
+            isMovingRight = true; // Reiniciar direcci贸n de movimiento en persecuci贸n
+            currentSpeed = chaseSpeed; // Utilizar velocidad de persecuci贸n
         }
         else
         {
@@ -60,11 +55,10 @@ public class Enemys : MonoBehaviour
 
         if (isChasing)
         {
-            // Calcular la direcci髇 hacia el jugador y moverse en esa direcci髇
+            // Calcular la direcci贸n hacia el jugador y moverse en esa direcci贸n
             Vector3 direction = playerTransform.position - transform.position;
-            float moveDistance = Mathf.Max(direction.magnitude - minDistance, 0f); // Respetar distancia m韓ima
+            float moveDistance = Mathf.Max(direction.magnitude - minDistance, 0f); // Respetar distancia m铆nima
             direction.Normalize();
-
             transform.Translate(direction * moveDistance * currentSpeed * Time.deltaTime);
         }
         else
@@ -74,9 +68,9 @@ public class Enemys : MonoBehaviour
 
             if (isMovingRight)
             {
-
                 transform.position = Vector3.MoveTowards(transform.position, patrolPosition, step);
                 spriteRenderer.flipX = true;
+
                 if (transform.position == patrolPosition)
                 {
                     isMovingRight = false;
