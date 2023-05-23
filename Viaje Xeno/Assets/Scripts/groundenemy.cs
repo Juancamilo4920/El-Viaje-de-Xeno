@@ -6,7 +6,7 @@ public class groundenemy : MonoBehaviour
 {
     public Transform playerTransform; // Transform del jugador
     public float patrolSpeed = 3f; // Velocidad de patrulla del enemigo
-    public float chaseSpeed = 6f; // Velocidad de persecución del enemigo
+    public float chaseSpeed = 2f; // Velocidad de persecución del enemigo
     public float patrolDistance = 5f; // Distancia a recorrer en la patrulla
     public float chaseDistance = 5f; // Distancia de persecución
     public float minDistance = 1f; // Distancia mínima entre el enemigo y el jugador
