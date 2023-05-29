@@ -60,6 +60,17 @@ public class Enemyground : MonoBehaviour
             return animator.GetBool(AnimationStrings.canMove); 
         }
     }
+    public float AttackCooldown
+    { 
+        get 
+        {
+            return animator.GetFloat(AnimationStrings.AttackCooldown); 
+        } 
+        set 
+        {
+            animator.SetFloat(AnimationStrings.AttackCooldown, Mathf.Max(value, 0));
+        }
+    }
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -68,10 +79,15 @@ public class Enemyground : MonoBehaviour
     }
 
 
+
     void Update()
     {
         HasTarget = attackZone.detectedColliders.Count > 0;
-
+        if(AttackCooldown> 0) 
+        {
+            AttackCooldown -= Time.deltaTime; 
+        }
+        
     }
 
     private void FixedUpdate()
@@ -91,7 +107,7 @@ public class Enemyground : MonoBehaviour
 
 }
 
-private void FlipDirection()
+    private void FlipDirection()
     {
         if (WalkDirection == WalkableDirection.Right)
         {
