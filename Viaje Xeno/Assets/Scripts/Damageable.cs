@@ -84,4 +84,11 @@ public class Damageable : MonoBehaviour
             isInvincible = true;
         }
     }
+    public void Heal(int healthRestore)
+    {
+        if (IsAlive)
+        {
+            Health += healthRestore;
+        }
+    }
 }

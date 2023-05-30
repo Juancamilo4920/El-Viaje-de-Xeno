@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ae5f979390c2bca4fa0e077b6181061e
+guid: 8bc8078145e250e44b67cf81749e29f4
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,223 +105,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Assets para videojuego - 1_0
+      name: WhatsApp Image 2023-05-29 at 4.25.12 PM_0
       rect:
         serializedVersion: 2
-        x: 818
-        y: 0
-        width: 353
-        height: 561
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 07846f04232c2c249b2502f4bfe6f396
-      internalID: 2087766716
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Assets para videojuego - 1_1
-      rect:
-        serializedVersion: 2
-        x: 162
-        y: 859
-        width: 293
-        height: 124
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2dfc949f57e91c94b803bac139f41c52
-      internalID: 795487467
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Assets para videojuego - 1_2
-      rect:
-        serializedVersion: 2
-        x: 166
-        y: 718
-        width: 284
-        height: 122
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 01e1847b5d976da43a7d571f2852b039
-      internalID: -850031240
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Assets para videojuego - 1_3
-      rect:
-        serializedVersion: 2
-        x: 459
-        y: 714
-        width: 271
-        height: 143
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 13f3c55709fde75498cc30f5a801ed0b
-      internalID: 1614809098
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Assets para videojuego - 1_4
-      rect:
-        serializedVersion: 2
-        x: 455
-        y: 864
-        width: 275
-        height: 127
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 985c871cd1b937a49be56834f3982d8f
-      internalID: -1637145726
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Assets para videojuego - 1_5
-      rect:
-        serializedVersion: 2
-        x: 309
-        y: 623
-        width: 285
-        height: 108
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b7dd713a4d2c22849b4fa059a9d4e9b0
-      internalID: -2045971772
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Assets para videojuego - 1_6
-      rect:
-        serializedVersion: 2
-        x: 1245
-        y: 144
-        width: 571
-        height: 346
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fb47ef8b3b428bb4b80b25eac7e65933
-      internalID: 1555765619
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Assets para videojuego - 1_7
-      rect:
-        serializedVersion: 2
-        x: 1501
-        y: 551
-        width: 92
-        height: 492
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b93cbce7118170a43babbc38edacf8bf
-      internalID: -1222184225
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Assets para videojuego - 1_8
-      rect:
-        serializedVersion: 2
-        x: 794
-        y: 757
-        width: 493
-        height: 277
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f0b659dfb97b77b4aaf12af86a84e734
-      internalID: -1376253044
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Assets para videojuego - 1_9
-      rect:
-        serializedVersion: 2
-        x: 124
-        y: 0
-        width: 581
-        height: 600
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2abc589f9c3d4ff4d854341a245d3ae8
-      internalID: 1456633552
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Assets para videojuego - 1_10
-      rect:
-        serializedVersion: 2
-        x: 1402
-        y: 555
-        width: 87
-        height: 492
+        x: 971
+        y: 60
+        width: 357
+        height: 359
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -329,8 +119,113 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4c100629ebf7fca44a787e41e3761b8c
-      internalID: -1210907888
+      spriteID: 54d5b8037ce33384d8d57a13717d4ac2
+      internalID: -1866689488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhatsApp Image 2023-05-29 at 4.25.12 PM_1
+      rect:
+        serializedVersion: 2
+        x: 913
+        y: 522
+        width: 267
+        height: 308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e437e5a944c6ce4aadf0b42e729ead4
+      internalID: -1524639027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhatsApp Image 2023-05-29 at 4.25.12 PM_2
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 489
+        width: 360
+        height: 281
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 844f93f7fe8243a4fb8c9e4f790ca661
+      internalID: -1493409853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhatsApp Image 2023-05-29 at 4.25.12 PM_3
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 30
+        width: 350
+        height: 401
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f902b4db8ed90c49a3076ebb27cead7
+      internalID: 1927885546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhatsApp Image 2023-05-29 at 4.25.12 PM_4
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 40
+        width: 284
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7749df21274a9f4fa6c13021a33c324
+      internalID: 1051835269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhatsApp Image 2023-05-29 at 4.25.12 PM_5
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 472
+        width: 217
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21dc28cc71720544e8dc285148ad0e95
+      internalID: -1298285073
       vertices: []
       indices: 
       edges: []
@@ -346,17 +241,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Assets para videojuego - 1_7: -1222184225
-      Assets para videojuego - 1_4: -1637145726
-      Assets para videojuego - 1_6: 1555765619
-      Assets para videojuego - 1_0: 2087766716
-      Assets para videojuego - 1_2: -850031240
-      Assets para videojuego - 1_3: 1614809098
-      Assets para videojuego - 1_9: 1456633552
-      Assets para videojuego - 1_5: -2045971772
-      Assets para videojuego - 1_1: 795487467
-      Assets para videojuego - 1_10: -1210907888
-      Assets para videojuego - 1_8: -1376253044
+      WhatsApp Image 2023-05-29 at 4.25.12 PM_4: 1051835269
+      WhatsApp Image 2023-05-29 at 4.25.12 PM_2: -1493409853
+      WhatsApp Image 2023-05-29 at 4.25.12 PM_5: -1298285073
+      WhatsApp Image 2023-05-29 at 4.25.12 PM_1: -1524639027
+      WhatsApp Image 2023-05-29 at 4.25.12 PM_0: -1866689488
+      WhatsApp Image 2023-05-29 at 4.25.12 PM_3: 1927885546
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
