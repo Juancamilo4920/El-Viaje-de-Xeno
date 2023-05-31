@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e5506f34854e9b04b98022bddedcc940
+guid: 87e6d012584a06c45ba8a601f16e271f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -101,41 +101,17 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Walk_0
+      name: cat_fighter_0
       rect:
         serializedVersion: 2
-        x: 26
-        y: 0
-        width: 91.666664
-        height: 80
+        x: 0
+        y: 160
+        width: 30
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -143,20 +119,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f37d334f3c43c7d4d84560667fbf43ce
-      internalID: 494485614
+      spriteID: 0d1b4975674be9a4aa5a2f15d0c4ecf7
+      internalID: -151869383
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_1
+      name: cat_fighter_1
       rect:
         serializedVersion: 2
-        x: 149
-        y: 0
-        width: 91.666664
-        height: 80
+        x: 31
+        y: 160
+        width: 31
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -164,20 +140,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2b433036b92cbd649bd6007c0d1f8c51
-      internalID: 1447985092
+      spriteID: 951ded9a7fd26bb4c82705b96652deb4
+      internalID: 1027893096
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_2
+      name: cat_fighter_2
       rect:
         serializedVersion: 2
-        x: 272
-        y: 0
-        width: 91.666664
-        height: 80
+        x: 64
+        y: 161
+        width: 32
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -185,71 +161,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 75f2b4aa29478984699c3b310ff204ec
-      internalID: -2004351001
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Walk_3
-      rect:
-        serializedVersion: 2
-        x: 395
-        y: 0
-        width: 91.666664
-        height: 80
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3e760e3a003d8e649b9a3a21d4cf054a
-      internalID: -1482159433
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Walk_4
-      rect:
-        serializedVersion: 2
-        x: 518
-        y: 0
-        width: 91.666664
-        height: 80
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: da6784b7a93a0a945814de75f284c456
-      internalID: -518240987
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Walk_5
-      rect:
-        serializedVersion: 2
-        x: 641
-        y: 0
-        width: 91.666664
-        height: 80
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d4cb4f2bfcb3501499251f311478a5a4
-      internalID: -389248694
+      spriteID: bab349bc9b7b5714fa35e04ea0f6579e
+      internalID: 645537015
       vertices: []
       indices: 
       edges: []
@@ -265,12 +178,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Walk_5: -389248694
-      Walk_0: 494485614
-      Walk_4: -518240987
-      Walk_2: -2004351001
-      Walk_3: -1482159433
-      Walk_1: 1447985092
+      cat_fighter_1: 1027893096
+      cat_fighter_2: 645537015
+      cat_fighter_0: -151869383
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -88,7 +88,19 @@ public class Damageable : MonoBehaviour
     {
         if (IsAlive)
         {
-            Health += healthRestore;
+            int maxHeal = Mathf.Max(MaxHealth - Health, 0);
+            int actualHeal = Mathf.Min(maxHeal, healthRestore);
+            if (MaxHealth == Health)
+            {
+                Health += 0;
+
+            }
+            else if (MaxHealth > Health)
+            {
+                Health += actualHeal;
+
+            }
+
         }
     }
 }

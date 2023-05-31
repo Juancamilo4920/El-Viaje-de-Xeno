@@ -8,10 +8,12 @@ using UnityEngine.InputSystem;
 [RequireComponent(typeof(Rigidbody2D), typeof(TouchingDirections))]
 public class PlayerController : MonoBehaviour
 {
+    Damageable damageable; 
     public float walkSpeed = 5f;
     public float runSpeed = 8f;
     public float jumpImpulse = 10f;
     public float airWalkSpeed = 3f;
+
 
     Vector2 moveInput;
 
@@ -123,11 +125,12 @@ public class PlayerController : MonoBehaviour
     Rigidbody2D rb; 
     Animator animator;
     
-
     private void Awake()
     {
+ 
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        damageable = gameObject.GetComponent<Damageable>();
     }
 
 
@@ -192,5 +195,12 @@ public class PlayerController : MonoBehaviour
             animator.SetTrigger(AnimationStrings.attackTrigger);
         }
     }
+    public void boost(float multi)
+    {
+        float newspeed = walkSpeed * multi;
+        walkSpeed = newspeed;
+     
+    }
+
 }
  
